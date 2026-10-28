@@ -1,3 +1,14 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('البوت يعمل بنجاح 🚀');
+});
+
+app.listen(port, () => {
+  console.log(`خادم الويب يعمل على المنفذ ${port}`);
+});
 const { loadCommands } = require("./handlers/commandHandler");
 const { loadEvents } = require("./handlers/eventHandler");
 
