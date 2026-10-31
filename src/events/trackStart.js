@@ -71,23 +71,23 @@ module.exports = {
 
             const buttons = new ActionRowBuilder().addComponents(
                 new ButtonBuilder()
-                    .setCustomId("music_previous")
-                    .setEmoji("⏮️")
+                    .setCustomId("music_volup")
+                    .setEmoji({ id: "1565893355634827438" })
                     .setStyle(ButtonStyle.Secondary),
 
                 new ButtonBuilder()
-                    .setCustomId("music_pause")
-                    .setEmoji("⏸️")
-                    .setStyle(ButtonStyle.Secondary),
-
-                new ButtonBuilder()
-                    .setCustomId("music_skip")
-                    .setEmoji("⏭️")
+                    .setCustomId("music_voldown")
+                    .setEmoji({ id: "1565893366997057617" })
                     .setStyle(ButtonStyle.Secondary),
 
                 new ButtonBuilder()
                     .setCustomId("music_stop")
                     .setEmoji("⏹️")
+                    .setStyle(ButtonStyle.Secondary),
+
+                new ButtonBuilder()
+                    .setCustomId("music_playpause")
+                    .setEmoji("⏸️")
                     .setStyle(ButtonStyle.Secondary)
             );
 
