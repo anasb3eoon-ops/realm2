@@ -72,12 +72,12 @@ module.exports = {
             const buttons = new ActionRowBuilder().addComponents(
                 new ButtonBuilder()
                     .setCustomId("music_volup")
-                    .setEmoji({ id: "1565893323376300144" })
+                    .setEmoji({ name: "emoji_4", id: "1565893323376300144" })
                     .setStyle(ButtonStyle.Secondary),
 
                 new ButtonBuilder()
                     .setCustomId("music_voldown")
-                    .setEmoji({ id: "1565893304384495636" })
+                    .setEmoji({ name: "emoji_3", id: "1565893304384495636" })
                     .setStyle(ButtonStyle.Secondary),
 
                 new ButtonBuilder()
